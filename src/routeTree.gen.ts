@@ -11,14 +11,42 @@
 // Import Routes
 
 import { Route as rootRoute } from './routes/__root'
+import { Route as WhitepaperImport } from './routes/whitepaper'
+import { Route as RoadmapImport } from './routes/roadmap'
+import { Route as OurTeamsImport } from './routes/our-teams'
 import { Route as MarketplaceImport } from './routes/marketplace'
+import { Route as AboutUsImport } from './routes/about-us'
 import { Route as IndexImport } from './routes/index'
 
 // Create/Update Routes
 
+const WhitepaperRoute = WhitepaperImport.update({
+  id: '/whitepaper',
+  path: '/whitepaper',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const RoadmapRoute = RoadmapImport.update({
+  id: '/roadmap',
+  path: '/roadmap',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const OurTeamsRoute = OurTeamsImport.update({
+  id: '/our-teams',
+  path: '/our-teams',
+  getParentRoute: () => rootRoute,
+} as any)
+
 const MarketplaceRoute = MarketplaceImport.update({
   id: '/marketplace',
   path: '/marketplace',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const AboutUsRoute = AboutUsImport.update({
+  id: '/about-us',
+  path: '/about-us',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -39,11 +67,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexImport
       parentRoute: typeof rootRoute
     }
+    '/about-us': {
+      id: '/about-us'
+      path: '/about-us'
+      fullPath: '/about-us'
+      preLoaderRoute: typeof AboutUsImport
+      parentRoute: typeof rootRoute
+    }
     '/marketplace': {
       id: '/marketplace'
       path: '/marketplace'
       fullPath: '/marketplace'
       preLoaderRoute: typeof MarketplaceImport
+      parentRoute: typeof rootRoute
+    }
+    '/our-teams': {
+      id: '/our-teams'
+      path: '/our-teams'
+      fullPath: '/our-teams'
+      preLoaderRoute: typeof OurTeamsImport
+      parentRoute: typeof rootRoute
+    }
+    '/roadmap': {
+      id: '/roadmap'
+      path: '/roadmap'
+      fullPath: '/roadmap'
+      preLoaderRoute: typeof RoadmapImport
+      parentRoute: typeof rootRoute
+    }
+    '/whitepaper': {
+      id: '/whitepaper'
+      path: '/whitepaper'
+      fullPath: '/whitepaper'
+      preLoaderRoute: typeof WhitepaperImport
       parentRoute: typeof rootRoute
     }
   }
@@ -53,37 +109,76 @@ declare module '@tanstack/react-router' {
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about-us': typeof AboutUsRoute
   '/marketplace': typeof MarketplaceRoute
+  '/our-teams': typeof OurTeamsRoute
+  '/roadmap': typeof RoadmapRoute
+  '/whitepaper': typeof WhitepaperRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about-us': typeof AboutUsRoute
   '/marketplace': typeof MarketplaceRoute
+  '/our-teams': typeof OurTeamsRoute
+  '/roadmap': typeof RoadmapRoute
+  '/whitepaper': typeof WhitepaperRoute
 }
 
 export interface FileRoutesById {
   __root__: typeof rootRoute
   '/': typeof IndexRoute
+  '/about-us': typeof AboutUsRoute
   '/marketplace': typeof MarketplaceRoute
+  '/our-teams': typeof OurTeamsRoute
+  '/roadmap': typeof RoadmapRoute
+  '/whitepaper': typeof WhitepaperRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/marketplace'
+  fullPaths:
+    | '/'
+    | '/about-us'
+    | '/marketplace'
+    | '/our-teams'
+    | '/roadmap'
+    | '/whitepaper'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/marketplace'
-  id: '__root__' | '/' | '/marketplace'
+  to:
+    | '/'
+    | '/about-us'
+    | '/marketplace'
+    | '/our-teams'
+    | '/roadmap'
+    | '/whitepaper'
+  id:
+    | '__root__'
+    | '/'
+    | '/about-us'
+    | '/marketplace'
+    | '/our-teams'
+    | '/roadmap'
+    | '/whitepaper'
   fileRoutesById: FileRoutesById
 }
 
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutUsRoute: typeof AboutUsRoute
   MarketplaceRoute: typeof MarketplaceRoute
+  OurTeamsRoute: typeof OurTeamsRoute
+  RoadmapRoute: typeof RoadmapRoute
+  WhitepaperRoute: typeof WhitepaperRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutUsRoute: AboutUsRoute,
   MarketplaceRoute: MarketplaceRoute,
+  OurTeamsRoute: OurTeamsRoute,
+  RoadmapRoute: RoadmapRoute,
+  WhitepaperRoute: WhitepaperRoute,
 }
 
 export const routeTree = rootRoute
@@ -97,14 +192,30 @@ export const routeTree = rootRoute
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/marketplace"
+        "/about-us",
+        "/marketplace",
+        "/our-teams",
+        "/roadmap",
+        "/whitepaper"
       ]
     },
     "/": {
       "filePath": "index.tsx"
     },
+    "/about-us": {
+      "filePath": "about-us.tsx"
+    },
     "/marketplace": {
       "filePath": "marketplace.tsx"
+    },
+    "/our-teams": {
+      "filePath": "our-teams.tsx"
+    },
+    "/roadmap": {
+      "filePath": "roadmap.tsx"
+    },
+    "/whitepaper": {
+      "filePath": "whitepaper.tsx"
     }
   }
 }
