@@ -1,3 +1,4 @@
+/* v8 ignore start */
 const reportWebVitals = (onPerfEntry?: () => void) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
     import('web-vitals').then(({ onCLS, onINP, onFCP, onLCP, onTTFB }) => {
@@ -10,4 +11,5 @@ const reportWebVitals = (onPerfEntry?: () => void) => {
   }
 }
 
-export default reportWebVitals
+export default reportWebVitals;
+/* v8 ignore stop */
