@@ -1,40 +1,41 @@
 import { cn } from "@/lib/utils";
-import { navigation } from "./navigation.constant";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useLayoutEffect } from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import LanguageSwitcher from "./LanguageSwitcher";
-interface NavgationbarProps {
+import type { NavigationItem } from "./navigation.type";
+import NavigationBarMobile from "./NavigationBarMobile";
+export interface NavgationbarProps {
   className?: string;
+  navigation: NavigationItem[];
 }
 
 export default function NavigationBar(props: NavgationbarProps) {
-  const router = useRouterState();
   const [activeOffset, setActiveOffset] = useState(-1);
+  const router = useRouterState();
 
   useLayoutEffect(() => {
     setTimeout(() => {
       const activeLinkElement = document.querySelector<HTMLAnchorElement>(
-        `.navbar-links a[href="${router.location.pathname}"]`,
+        `.navbar-links a.active`,
       );
-      const boundingRect = activeLinkElement?.getBoundingClientRect();
       setActiveOffset(activeLinkElement?.offsetLeft ?? 0);
-      console.log(activeLinkElement?.offsetLeft, boundingRect?.left);
     }, 50);
   }, [router.location.pathname]);
 
   return (
     <header
       className={cn(
-        "h-navbar flex w-full items-center justify-center bg-black/50 backdrop-blur-sm",
+        "h-navbar z-10 flex w-full items-center justify-center backdrop-blur-sm lg:bg-black/50",
         props.className,
       )}
     >
-      <div className="relative w-full">
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
+      <div className="relative flex h-full w-full justify-between xl:h-auto">
+        <NavigationBarMobile {...props} />
+        <div className="mx-auto flex w-full max-w-7xl items-center pr-6 xl:pl-0">
           <div
-            className="navbar-links font-squada-one flex items-center gap-14 text-lg leading-5 font-bold tracking-wide text-white uppercase [&>a]:inline-block"
+            className="navbar-links font-squada-one hidden items-center gap-14 text-lg leading-5 font-bold tracking-wide text-white uppercase xl:flex [&>a]:inline-block"
             style={
               {
                 "--link-active-offset": `${activeOffset}px`,
@@ -43,13 +44,13 @@ export default function NavigationBar(props: NavgationbarProps) {
               } as React.CSSProperties
             }
           >
-            {navigation.map((item) => (
+            {props.navigation.map((item) => (
               <Link key={item.href} to={item.href}>
                 {item.label}
               </Link>
             ))}
           </div>
-          <div className="flex items-center gap-10">
+          <div className="ml-auto flex items-center gap-10">
             <Button className="rounded-md">Connect Wallet</Button>
             <LanguageSwitcher />
           </div>

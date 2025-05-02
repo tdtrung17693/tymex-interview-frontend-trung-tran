@@ -1,9 +1,4 @@
-import type { FileRoutesByFullPath } from "@/routeTree.gen";
-
-interface NavigationItem {
-  href: keyof FileRoutesByFullPath;
-  label: string;
-}
+import type { NavigationItem } from "./navigation.type";
 
 export const navigation: NavigationItem[] = [
   {
