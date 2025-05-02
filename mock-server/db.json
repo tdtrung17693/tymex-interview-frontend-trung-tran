@@ -1,0 +1,555 @@
+{
+  "products": [
+    {
+      "id": 30,
+      "title": "Bassketball Girl",
+      "category": "Rare",
+      "price": 199.79,
+      "isFavorite": true,
+      "createdAt": 1693738981000,
+      "theme": "Dark",
+      "tier": "Rare",
+      "imageId": 10,
+      "author": {
+        "firstName": "Halsy",
+        "lastName": "McGeown",
+        "email": "hmcgeowna@bloglovin.com",
+        "gender": "Male",
+        "avatar": "https://robohash.org/minimasedmolestias.png?size=100x100&set=set1",
+        "onlineStatus": "busy"
+      }
+    },
+    {
+      "id": 51,
+      "title": "The DJ",
+      "category": "Epic",
+      "price": 121.63,
+      "isFavorite": true,
+      "createdAt": 1588636841000,
+      "theme": "Halloween",
+      "tier": "Epic",
+      "imageId": 3,
+      "author": {
+        "firstName": "Zorah",
+        "lastName": "Lalevee",
+        "email": "zlaleveee@salon.com",
+        "gender": "Female",
+        "avatar": "https://robohash.org/nesciuntestqui.png?size=100x100&set=set1",
+        "onlineStatus": "online"
+      }
+    },
+    {
+      "id": 70,
+      "title": "The DJ",
+      "category": "Lower Body",
+      "price": 146.38,
+      "isFavorite": true,
+      "createdAt": 1620113001000,
+      "theme": "Halloween",
+      "tier": "Epic",
+      "imageId": 13,
+      "author": {
+        "firstName": "Sargent",
+        "lastName": "Matches",
+        "email": "smatches10@dion.ne.jp",
+        "gender": "Male",
+        "avatar": "https://robohash.org/ipsamautvoluptas.png?size=100x100&set=set1",
+        "onlineStatus": "online"
+      }
+    },
+    {
+      "id": 102,
+      "title": "Neon Guy",
+      "category": "Mythic",
+      "price": 194,
+      "isFavorite": true,
+      "createdAt": 1617436674000,
+      "theme": "Dark",
+      "tier": "Rare",
+      "imageId": 5,
+      "author": {
+        "firstName": "Gradey",
+        "lastName": "Birds",
+        "email": "gbirds1c@sphinn.com",
+        "gender": "Male",
+        "avatar": "https://robohash.org/iustoquiadolorem.png?size=100x100&set=set1",
+        "onlineStatus": "online"
+      }
+    },
+    {
+      "id": 166,
+      "title": "The DJ",
+      "category": "Legendary",
+      "price": 9.59,
+      "isFavorite": true,
+      "createdAt": 1718124522000,
+      "theme": "Dark",
+      "tier": "Mythic",
+      "imageId": 17,
+      "author": {
+        "firstName": "Callean",
+        "lastName": "O'Dunneen",
+        "email": "codunneen19@woothemes.com",
+        "gender": "Male",
+        "avatar": "https://robohash.org/culpafacilisqui.png?size=100x100&set=set1",
+        "onlineStatus": "offline"
+      }
+    },
+    {
+      "id": 186,
+      "title": "Mafia England",
+      "category": "Shoes",
+      "price": 9.31,
+      "isFavorite": false,
+      "createdAt": 1666325824000,
+      "theme": "Halloween",
+      "tier": "Legendary",
+      "imageId": 2,
+      "author": {
+        "firstName": "Kevan",
+        "lastName": "Heeps",
+        "email": "kheeps11@ameblo.jp",
+        "gender": "Male",
+        "avatar": "https://robohash.org/pariaturreiciendisest.png?size=100x100&set=set1",
+        "onlineStatus": "offline"
+      }
+    },
+    {
+      "id": 204,
+      "title": "Bassketball Girl",
+      "category": "Upper Body",
+      "price": 83.18,
+      "isFavorite": false,
+      "createdAt": 1664011430000,
+      "theme": "Halloween",
+      "tier": "Rare",
+      "imageId": 3,
+      "author": {
+        "firstName": "Harald",
+        "lastName": "Pickle",
+        "email": "hpickle18@networkadvertising.org",
+        "gender": "Male",
+        "avatar": "https://robohash.org/delenitiatquefacere.png?size=100x100&set=set1",
+        "onlineStatus": "offline"
+      }
+    },
+    {
+      "id": 216,
+      "title": "Bassketball Girl",
+      "category": "Hat",
+      "price": 99.24,
+      "isFavorite": false,
+      "createdAt": 1714458064000,
+      "theme": "Halloween",
+      "tier": "Rare",
+      "imageId": 9,
+      "author": {
+        "firstName": "Dennis",
+        "lastName": "Rosenshine",
+        "email": "drosenshinem@google.ca",
+        "gender": "Male",
+        "avatar": "https://robohash.org/etaccusantiumminus.png?size=100x100&set=set1",
+        "onlineStatus": "online"
+      }
+    },
+    {
+      "id": 231,
+      "title": "Mafia England",
+      "category": "Mythic",
+      "price": 136.77,
+      "isFavorite": true,
+      "createdAt": 1692072889000,
+      "theme": "Dark",
+      "tier": "Rare",
+      "imageId": 12,
+      "author": {
+        "firstName": "Burch",
+        "lastName": "Stapleford",
+        "email": "bstaplefordo@mozilla.org",
+        "gender": "Male",
+        "avatar": "https://robohash.org/eaquisoluta.png?size=100x100&set=set1",
+        "onlineStatus": "idle"
+      }
+    },
+    {
+      "id": 247,
+      "title": "Bassketball Girl",
+      "category": "Rare",
+      "price": 163.97,
+      "isFavorite": false,
+      "createdAt": 1715056949000,
+      "theme": "Dark",
+      "tier": "Rare",
+      "imageId": 13,
+      "author": {
+        "firstName": "Zorah",
+        "lastName": "Lalevee",
+        "email": "zlaleveee@salon.com",
+        "gender": "Female",
+        "avatar": "https://robohash.org/nesciuntestqui.png?size=100x100&set=set1",
+        "onlineStatus": "online"
+      }
+    },
+    {
+      "id": 249,
+      "title": "Bassketball Girl",
+      "category": "Epic",
+      "price": 199.46,
+      "isFavorite": true,
+      "createdAt": 1678280374000,
+      "theme": "Light",
+      "tier": "Rare",
+      "imageId": 16,
+      "author": {
+        "firstName": "Valdemar",
+        "lastName": "Gertray",
+        "email": "vgertrayj@comsenz.com",
+        "gender": "Male",
+        "avatar": "https://robohash.org/faciliseaqueeum.png?size=100x100&set=set1",
+        "onlineStatus": "idle"
+      }
+    },
+    {
+      "id": 375,
+      "title": "Bassketball Girl",
+      "category": "Shoes",
+      "price": 188.96,
+      "isFavorite": false,
+      "createdAt": 1632066057000,
+      "theme": "Colorful",
+      "tier": "Basic",
+      "imageId": 17,
+      "author": {
+        "firstName": "Cecil",
+        "lastName": "Hould",
+        "email": "chouldh@fc2.com",
+        "gender": "Female",
+        "avatar": "https://robohash.org/evenietimpeditdeserunt.png?size=100x100&set=set1",
+        "onlineStatus": "busy"
+      }
+    },
+    {
+      "id": 384,
+      "title": "Mafia England",
+      "category": "Shoes",
+      "price": 138.9,
+      "isFavorite": false,
+      "createdAt": 1602070668000,
+      "theme": "Light",
+      "tier": "Rare",
+      "imageId": 20,
+      "author": {
+        "firstName": "Robyn",
+        "lastName": "Bradborne",
+        "email": "rbradborney@yahoo.co.jp",
+        "gender": "Female",
+        "avatar": "https://robohash.org/istenostrumea.png?size=100x100&set=set1",
+        "onlineStatus": "idle"
+      }
+    },
+    {
+      "id": 397,
+      "title": "The DJ",
+      "category": "Accessory",
+      "price": 26.93,
+      "isFavorite": true,
+      "createdAt": 1673307524000,
+      "theme": "Halloween",
+      "tier": "Rare",
+      "imageId": 6,
+      "author": {
+        "firstName": "Leopold",
+        "lastName": "MacKnight",
+        "email": "lmacknight6@timesonline.co.uk",
+        "gender": "Male",
+        "avatar": "https://robohash.org/doloresvitaeadipisci.png?size=100x100&set=set1",
+        "onlineStatus": "online"
+      }
+    },
+    {
+      "id": 469,
+      "title": "Mafia England",
+      "category": "Accessory",
+      "price": 39.5,
+      "isFavorite": true,
+      "createdAt": 1597716832000,
+      "theme": "Dark",
+      "tier": "Rare",
+      "imageId": 5,
+      "author": {
+        "firstName": "Godiva",
+        "lastName": "Whytock",
+        "email": "gwhytockx@dell.com",
+        "gender": "Female",
+        "avatar": "https://robohash.org/eiusfacerenihil.png?size=100x100&set=set1",
+        "onlineStatus": "busy"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Assassin",
+      "category": "Lower Body",
+      "price": 67.47,
+      "isFavorite": true,
+      "createdAt": 1670404977000,
+      "theme": "Dark",
+      "tier": "Rare",
+      "imageId": 4,
+      "author": {
+        "firstName": "Zorah",
+        "lastName": "Lalevee",
+        "email": "zlaleveee@salon.com",
+        "gender": "Female",
+        "avatar": "https://robohash.org/nesciuntestqui.png?size=100x100&set=set1",
+        "onlineStatus": "online"
+      }
+    },
+    {
+      "id": 491,
+      "title": "Neon Guy",
+      "category": "Mythic",
+      "price": 42.7,
+      "isFavorite": false,
+      "createdAt": 1602941768000,
+      "theme": "Light",
+      "tier": "Rare",
+      "imageId": 11,
+      "author": {
+        "firstName": "Sean",
+        "lastName": "Pendlebery",
+        "email": "spendleberyl@wsj.com",
+        "gender": "Male",
+        "avatar": "https://robohash.org/nemoreprehenderitoptio.png?size=100x100&set=set1",
+        "onlineStatus": "offline"
+      }
+    },
+    {
+      "id": 495,
+      "title": "Bassketball Girl",
+      "category": "Rare",
+      "price": 119.42,
+      "isFavorite": false,
+      "createdAt": 1660135545000,
+      "theme": "Dark",
+      "tier": "Rare",
+      "imageId": 14,
+      "author": {
+        "firstName": "Rockey",
+        "lastName": "Stoddart",
+        "email": "rstoddartn@bandcamp.com",
+        "gender": "Male",
+        "avatar": "https://robohash.org/verovoluptatemblanditiis.png?size=100x100&set=set1",
+        "onlineStatus": "offline"
+      }
+    },
+    {
+      "id": 560,
+      "title": "Bassketball Girl",
+      "category": "Shoes",
+      "price": 37.09,
+      "isFavorite": false,
+      "createdAt": 1579003078000,
+      "theme": "Dark",
+      "tier": "Rare",
+      "imageId": 20,
+      "author": {
+        "firstName": "Jessi",
+        "lastName": "Keiley",
+        "email": "jkeileyb@examiner.com",
+        "gender": "Female",
+        "avatar": "https://robohash.org/delenitioccaecatiex.png?size=100x100&set=set1",
+        "onlineStatus": "online"
+      }
+    },
+    {
+      "id": 628,
+      "title": "Bassketball Girl",
+      "category": "Rare",
+      "price": 169.19,
+      "isFavorite": false,
+      "createdAt": 1600480836000,
+      "theme": "Dark",
+      "tier": "Basic",
+      "imageId": 2,
+      "author": {
+        "firstName": "Godiva",
+        "lastName": "Whytock",
+        "email": "gwhytockx@dell.com",
+        "gender": "Female",
+        "avatar": "https://robohash.org/eiusfacerenihil.png?size=100x100&set=set1",
+        "onlineStatus": "busy"
+      }
+    },
+    {
+      "id": 725,
+      "title": "Neon Guy",
+      "category": "Lower Body",
+      "price": 43.38,
+      "isFavorite": true,
+      "createdAt": 1707459134000,
+      "theme": "Halloween",
+      "tier": "Rare",
+      "imageId": 10,
+      "author": {
+        "firstName": "Abrahan",
+        "lastName": "Melwall",
+        "email": "amelwallq@wunderground.com",
+        "gender": "Male",
+        "avatar": "https://robohash.org/architectoatqueipsam.png?size=100x100&set=set1",
+        "onlineStatus": "busy"
+      }
+    },
+    {
+      "id": 759,
+      "title": "The DJ",
+      "category": "Lower Body",
+      "price": 184.81,
+      "isFavorite": false,
+      "createdAt": 1634380568000,
+      "theme": "Halloween",
+      "tier": "Rare",
+      "imageId": 20,
+      "author": {
+        "firstName": "Gabriela",
+        "lastName": "Condon",
+        "email": "gcondon3@vimeo.com",
+        "gender": "Female",
+        "avatar": "https://robohash.org/beataemolestiaedolore.png?size=100x100&set=set1",
+        "onlineStatus": "busy"
+      }
+    },
+    {
+      "id": 790,
+      "title": "Mafia England",
+      "category": "Accessory",
+      "price": 169.31,
+      "isFavorite": false,
+      "createdAt": 1671476616000,
+      "theme": "Light",
+      "tier": "Rare",
+      "imageId": 2,
+      "author": {
+        "firstName": "Luigi",
+        "lastName": "Tetford",
+        "email": "ltetford1d@usnews.com",
+        "gender": "Male",
+        "avatar": "https://robohash.org/sedvoluptatemreiciendis.png?size=100x100&set=set1",
+        "onlineStatus": "offline"
+      }
+    },
+    {
+      "id": 798,
+      "title": "The DJ",
+      "category": "Legendary",
+      "price": 171.5,
+      "isFavorite": true,
+      "createdAt": 1716553083000,
+      "theme": "Halloween",
+      "tier": "Basic",
+      "imageId": 8,
+      "author": {
+        "firstName": "Maggee",
+        "lastName": "Parfitt",
+        "email": "mparfittw@xrea.com",
+        "gender": "Female",
+        "avatar": "https://robohash.org/veniamporrocum.png?size=100x100&set=set1",
+        "onlineStatus": "online"
+      }
+    },
+    {
+      "id": 919,
+      "title": "Mafia England",
+      "category": "Accessory",
+      "price": 158.05,
+      "isFavorite": true,
+      "createdAt": 1605691998000,
+      "theme": "Halloween",
+      "tier": "Basic",
+      "imageId": 6,
+      "author": {
+        "firstName": "Alva",
+        "lastName": "Mossop",
+        "email": "amossop1b@ask.com",
+        "gender": "Male",
+        "avatar": "https://robohash.org/fugiatperferendisperspiciatis.png?size=100x100&set=set1",
+        "onlineStatus": "offline"
+      }
+    },
+    {
+      "id": 951,
+      "title": "Neon Guy",
+      "category": "Mythic",
+      "price": 45.7,
+      "isFavorite": true,
+      "createdAt": 1711941694000,
+      "theme": "Halloween",
+      "tier": "Rare",
+      "imageId": 20,
+      "author": {
+        "firstName": "Patsy",
+        "lastName": "Daniel",
+        "email": "pdanield@msn.com",
+        "gender": "Female",
+        "avatar": "https://robohash.org/voluptateshicsit.png?size=100x100&set=set1",
+        "onlineStatus": "online"
+      }
+    },
+    {
+      "id": 954,
+      "title": "Mafia England",
+      "category": "Legendary",
+      "price": 159.01,
+      "isFavorite": true,
+      "createdAt": 1631869387000,
+      "theme": "Colorful",
+      "tier": "Basic",
+      "imageId": 2,
+      "author": {
+        "firstName": "Candida",
+        "lastName": "Southgate",
+        "email": "csouthgate16@google.pl",
+        "gender": "Female",
+        "avatar": "https://robohash.org/explicaboliberocumque.png?size=100x100&set=set1",
+        "onlineStatus": "online"
+      }
+    },
+    {
+      "id": 978,
+      "title": "Neon Guy",
+      "category": "Accessory",
+      "price": 149.74,
+      "isFavorite": true,
+      "createdAt": 1626791844000,
+      "theme": "Dark",
+      "tier": "Basic",
+      "imageId": 3,
+      "author": {
+        "firstName": "Luigi",
+        "lastName": "Tetford",
+        "email": "ltetford1d@usnews.com",
+        "gender": "Male",
+        "avatar": "https://robohash.org/sedvoluptatemreiciendis.png?size=100x100&set=set1",
+        "onlineStatus": "offline"
+      }
+    },
+    {
+      "id": 979,
+      "title": "Neon Guy",
+      "category": "Shoes",
+      "price": 196.2,
+      "isFavorite": true,
+      "createdAt": 1664464698000,
+      "theme": "Dark",
+      "tier": "Epic",
+      "imageId": 20,
+      "author": {
+        "firstName": "Harald",
+        "lastName": "Pickle",
+        "email": "hpickle18@networkadvertising.org",
+        "gender": "Male",
+        "avatar": "https://robohash.org/delenitiatquefacere.png?size=100x100&set=set1",
+        "onlineStatus": "offline"
+      }
+    }
+  ]
+}
