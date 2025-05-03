@@ -9,8 +9,4 @@ export type ApiResponse<T> = {
   pagination: Pagination;
 };
 
-export type ApiError = {
-  message: string;
-  status: number;
-};
 

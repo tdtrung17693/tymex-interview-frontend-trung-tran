@@ -1,12 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import {
-  MessageSquareText,
-  MessageSquareIcon,
-  Phone,
-  Copyright,
-} from "lucide-react";
+import { MessageSquareText, Phone, Copyright } from "lucide-react";
 const FOOTER_LINKS = [
   {
     label: "Home",

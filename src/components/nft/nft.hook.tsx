@@ -4,7 +4,7 @@ import {
   type NftFilter,
   type Pagination,
 } from "@/services/nft.service";
-import { keepPreviousData, useInfiniteQuery } from "@tanstack/react-query";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import { useMemo } from "react";
 import type { NFTItem } from "./ntf.type";
 

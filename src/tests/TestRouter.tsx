@@ -1,5 +1,4 @@
 import {
-  Route,
   RouterProvider,
   createRootRoute,
   createRoute,
