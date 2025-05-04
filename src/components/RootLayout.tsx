@@ -15,7 +15,7 @@ export default function MainLayout({
         className="flex min-h-screen flex-col"
       >
         <NavigationBar className="sticky top-0" navigation={navigation} />
-        <div className="relative -mt-[var(--height-navbar)] mb-auto flex-1 pt-[var(--height-navbar)]">
+        <div className="relative -mt-[var(--height-navbar)] mb-auto flex flex-1 flex-col pt-[var(--height-navbar)]">
           {children}
         </div>
         <Footer />

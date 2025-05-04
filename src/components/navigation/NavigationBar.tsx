@@ -20,7 +20,7 @@ export default function NavigationBar(props: NavgationbarProps) {
       const activeLinkElement = document.querySelector<HTMLAnchorElement>(
         `.navbar-links a.active`,
       );
-      setActiveOffset(activeLinkElement?.offsetLeft ?? 0);
+      setActiveOffset(activeLinkElement?.offsetLeft ?? -1);
     }, 50);
   }, [router.location.pathname]);
 
@@ -35,7 +35,10 @@ export default function NavigationBar(props: NavgationbarProps) {
         <NavigationBarMobile {...props} />
         <div className="mx-auto flex w-full max-w-7xl items-center pr-6 xl:pl-0">
           <div
-            className="navbar-links font-squada-one hidden items-center gap-14 text-lg leading-5 font-bold tracking-wide text-white uppercase xl:flex [&>a]:inline-block"
+            className={cn(
+              "navbar-links font-squada-one hidden items-center gap-14 text-lg leading-5 font-bold tracking-wide text-white uppercase xl:flex [&>a]:inline-block",
+              activeOffset === -1 && "hidden",
+            )}
             style={
               {
                 "--link-active-offset": `${activeOffset}px`,

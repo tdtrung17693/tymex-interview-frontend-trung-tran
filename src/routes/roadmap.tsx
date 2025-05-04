@@ -5,9 +5,5 @@ export const Route = createFileRoute("/roadmap")({
 });
 
 function RouteComponent() {
-  return (
-    <div className="container">
-      <UnderConstruction />
-    </div>
-  );
+  return <UnderConstruction />;
 }

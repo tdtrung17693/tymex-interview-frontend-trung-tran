@@ -5,9 +5,5 @@ export const Route = createFileRoute("/whitepaper")({
 });
 
 function RouteComponent() {
-  return (
-    <div className="container">
-      <UnderConstruction />
-    </div>
-  );
+  return <UnderConstruction />;
 }
