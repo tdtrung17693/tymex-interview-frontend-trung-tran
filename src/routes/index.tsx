@@ -1,39 +1,23 @@
-import { createFileRoute } from '@tanstack/react-router'
-import logo from '../logo.svg'
-
-export const Route = createFileRoute('/')({
+import { createFileRoute } from "@tanstack/react-router";
+import { Button } from "@/components/ui/button";
+import { Link } from "@tanstack/react-router";
+import { ArrowRight } from "lucide-react";
+export const Route = createFileRoute("/")({
   component: App,
-})
+});
 
 function App() {
   return (
-    <div className="text-center">
-      <header className="min-h-screen flex flex-col items-center justify-center bg-[#282c34] text-white text-[calc(10px+2vmin)]">
-        <img
-          src={logo}
-          className="h-[40vmin] pointer-events-none animate-[spin_20s_linear_infinite]"
-          alt="logo"
-        />
-        <p>
-          Edit <code>src/routes/index.tsx</code> and save to reload.
-        </p>
-        <a
-          className="text-[#61dafb] hover:underline"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          className="text-[#61dafb] hover:underline"
-          href="https://tanstack.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn TanStack
-        </a>
-      </header>
+    <div className="flex h-full items-center justify-center">
+      <Button
+        asChild
+        className="font-squada-one group size-auto h-auto w-auto min-w-40 px-16 py-4 text-xl uppercase"
+      >
+        <Link to="/marketplace">
+          Go to Marketplace{" "}
+          <ArrowRight className="ml-2 size-4 transition-transform duration-300 group-hover:translate-x-1" />
+        </Link>
+      </Button>
     </div>
-  )
+  );
 }

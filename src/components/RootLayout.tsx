@@ -10,9 +10,12 @@ export default function MainLayout({
 }) {
   return (
     <QueryClientProvider>
-      <div data-vaul-drawer-wrapper="true">
+      <div
+        data-vaul-drawer-wrapper="true"
+        className="flex min-h-screen flex-col"
+      >
         <NavigationBar className="sticky top-0" navigation={navigation} />
-        <div className="-mt-[var(--height-navbar)] pt-[var(--height-navbar)]">
+        <div className="relative -mt-[var(--height-navbar)] mb-auto flex-1 pt-[var(--height-navbar)]">
           {children}
         </div>
         <Footer />

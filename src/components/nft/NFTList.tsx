@@ -25,9 +25,14 @@ export default function NFTList() {
   );
 
   const debouncedParams = useDebounce<UseNFTParams>(params, 300);
-  const { nftList, isPending, hasNextPage, fetchNextPage, isFetching } = useNFT(
-    { ...debouncedParams, options: { simulateSlowResponse: true } },
-  );
+  const {
+    nftList,
+    isPending,
+    hasNextPage,
+    fetchNextPage,
+    isFetching,
+    isError,
+  } = useNFT({ ...debouncedParams, options: { simulateSlowResponse: true } });
 
   const handleCategoryChange = useMemoizeFunction((category: string) => {
     setFilter({
@@ -98,8 +103,18 @@ export default function NFTList() {
             <div className="grid grid-cols-2 gap-4 @min-3xl:grid-cols-4 @min-5xl:gap-10">
               {!isPending &&
                 nftList?.map((nft) => <NFTCard key={nft.id} nft={nft} />)}
-              {!isPending && nftList?.length === 0 && (
+              {!isPending && nftList?.length === 0 && !isError && (
                 <div className="col-span-4">No NFTs found</div>
+              )}
+              {isError && (
+                <div className="col-span-4">
+                  <div className="flex flex-col items-center justify-center rounded-lg border border-red-500 p-4">
+                    <div className="text-2xl font-bold">Error loading NFTs</div>
+                    <div className="text-sm text-gray-500">
+                      Please try again later
+                    </div>
+                  </div>
+                </div>
               )}
               {isFetching &&
                 Array.from({
